@@ -1,0 +1,14 @@
+function venvs()
+{
+  if [ $# -eq 0 ]
+    then
+      ls ~/.venvs/
+    else
+      if [ -f ~/.venvs/$1/bin/activate ]
+        then
+          source ~/.venvs/$1/bin/activate
+        else
+          echo "venv $1 does not exist in ~/.venvs"
+      fi
+  fi
+}
