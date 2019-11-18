@@ -105,6 +105,8 @@ fpath=($fpath "/home/mike/.zfunctions")
 autoload -U compinit
 compinit
 
+autoload -U venvs
+
 #Utilisation de vim pour les raccourcis clavier
 #bindkey -e
 
